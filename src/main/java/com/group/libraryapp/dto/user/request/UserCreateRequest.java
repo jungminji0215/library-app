@@ -1,23 +1,18 @@
 package com.group.libraryapp.dto.user.request;
 
+import com.group.libraryapp.domain.user.User;
+import lombok.Data;
+
+@Data
 public class UserCreateRequest {
-    private String name;
+    private String name; // 필수
 
     private Integer age; // Integer : null 때문에
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
+    public User toEntity(){
+        return User.builder()
+                .name(name)
+                .age(age)
+                .build();
     }
 }
