@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-// dto에 getter 없으면 반환 안됨
-// todo 테스트코드, 문서, 오류, 검증
-
 @RequiredArgsConstructor
 @RestController
 public class UserController {
