@@ -16,10 +16,6 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public Long createUser(UserCreateRequest request) {
-//        if(!StringUtils.hasText(request.getName())){
-//            System.out.println("이름 필수예요");
-//        }
-
         User user = request.toEntity();
         return userRepository.save(user).getId();
     }
