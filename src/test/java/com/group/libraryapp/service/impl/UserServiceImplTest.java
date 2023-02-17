@@ -4,9 +4,11 @@ import com.group.libraryapp.domain.user.User;
 import com.group.libraryapp.domain.user.UserRepository;
 import com.group.libraryapp.dto.user.request.UserCreateRequest;
 import com.group.libraryapp.service.UserService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 
 import java.util.List;
 
