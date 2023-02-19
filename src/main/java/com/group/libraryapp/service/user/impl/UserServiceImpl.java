@@ -1,9 +1,10 @@
-package com.group.libraryapp.service.impl;
+package com.group.libraryapp.service.user.impl;
 
 import com.group.libraryapp.domain.user.User;
 import com.group.libraryapp.domain.user.UserRepository;
 import com.group.libraryapp.dto.user.request.UserCreateRequest;
-import com.group.libraryapp.service.UserService;
+import com.group.libraryapp.dto.user.request.UserLoanHistoryCreateRequest;
+import com.group.libraryapp.service.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
