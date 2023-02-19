@@ -1,7 +1,7 @@
 package com.group.libraryapp.controller;
 
 import com.group.libraryapp.dto.user.request.UserCreateRequest;
-import com.group.libraryapp.service.UserService;
+import com.group.libraryapp.service.user.UserService;
 import com.group.libraryapp.utils.ResponseResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/user")
-    public ResponseEntity<?> saveUser(@Valid @RequestBody UserCreateRequest request){
+    public ResponseEntity<?> create(@Valid @RequestBody UserCreateRequest request){
         return ResponseEntity.ok().body(new ResponseResult<>(userService.createUser(request)));
     }
 }
