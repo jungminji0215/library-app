@@ -56,3 +56,13 @@
 
 ## 트러블 슈팅
 
+
+## 배포 해보기
+
+빌드 성공!
+
+<img width="713" alt="스크린샷 2023-02-21 오전 2 55 31" src="https://user-images.githubusercontent.com/83000829/220173917-8ff31341-1977-4423-9c8a-e3e324b6e0f1.png">
+
+배포 완료!
+
+<img width="1419" alt="스크린샷 2023-02-21 오전 3 02 39" src="https://user-images.githubusercontent.com/83000829/220174919-2edc5496-6645-4247-bba3-8ee22a2bc82b.png">
