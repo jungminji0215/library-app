@@ -4,6 +4,7 @@ import com.group.libraryapp.domain.user.User;
 import com.group.libraryapp.domain.user.UserRepository;
 import com.group.libraryapp.dto.user.request.UserCreateRequest;
 import com.group.libraryapp.service.user.UserService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +20,11 @@ class UserServiceImplTest {
 
     @Autowired
     UserService userService;
+
+    @BeforeEach
+    void clear(){
+        userRepository.deleteAll();
+    }
 
     @Test
     void 사용자_저장되었는지_확인() {
