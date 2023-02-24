@@ -5,10 +5,7 @@ import com.group.libraryapp.dto.user.request.UserLoanHistoryCreateRequest;
 import com.group.libraryapp.service.book.BookService;
 import com.group.libraryapp.utils.ResponseResult;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -31,5 +28,10 @@ public class BookController {
             @Valid @RequestBody UserLoanHistoryCreateRequest request,
             @PathVariable Long bookId){
         bookService.loanBook(request, bookId);
+    }
+
+    @GetMapping("/book")
+    public ResponseEntity<?> listBook(){
+        return ResponseEntity.ok().body(new ResponseResult<>(bookService.listBook()));
     }
 }
