@@ -54,6 +54,7 @@
 | [사용자] 등록 | POST        | /user               |
 | [도서] 등록  | POST        | /book               |
 | [도서] 대출  | POST        | /book/{bookId}/loan |
+| [도서] 목록  | GET        | /book               |
 
 
 
