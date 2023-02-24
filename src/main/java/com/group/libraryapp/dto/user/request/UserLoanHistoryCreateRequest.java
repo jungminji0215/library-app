@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class UserLoanHistoryCreateRequest {
-    private Integer userId;
+    private Long userId;
 }

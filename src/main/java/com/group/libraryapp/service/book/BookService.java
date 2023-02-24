@@ -6,5 +6,5 @@ import com.group.libraryapp.dto.user.request.UserLoanHistoryCreateRequest;
 public interface BookService {
     Long createBook(BookCreateRequest request);
 
-    Long loanBook(UserLoanHistoryCreateRequest request, Long bookId);
+    void loanBook(UserLoanHistoryCreateRequest request, Long bookId);
 }
