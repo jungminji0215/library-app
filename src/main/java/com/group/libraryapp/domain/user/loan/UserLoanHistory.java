@@ -24,4 +24,9 @@ public class UserLoanHistory {
 
     @ColumnDefault("false")
     private boolean isReturn;
+
+    public UserLoanHistory(User user, Book book) {
+        this.user = user;
+        this.book = book;
+    }
 }

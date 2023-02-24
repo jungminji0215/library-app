@@ -27,9 +27,9 @@ public class BookController {
 
 
     @PostMapping("/book/{bookId}/loan")
-    public ResponseEntity<?> loanBook(
+    public void loanBook(
             @Valid @RequestBody UserLoanHistoryCreateRequest request,
             @PathVariable Long bookId){
-        return ResponseEntity.ok().body(new ResponseResult<>(bookService.loanBook(request, bookId)));
+        bookService.loanBook(request, bookId);
     }
 }
